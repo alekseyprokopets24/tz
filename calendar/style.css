@@ -1,0 +1,48 @@
+.month-days{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    padding: 20px 0;
+}
+.num{
+    width: 10%;
+    margin: 0 10px 10px 0;
+    height: 100px;
+    background: gainsboro;
+    border: 1px solid black;
+    font-size: 20px;
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.num:nth-child(9n){
+    margin: 0;
+}
+.month-name{
+    text-align: center;
+}
+
+.modal-window{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    background: cadetblue;
+    padding: 20px;
+
+    display: none;
+}
+.input-text{
+    width: 100%;
+    margin-bottom: 20px;
+}
+h2{
+    margin: 0 0 4px 0;
+}
