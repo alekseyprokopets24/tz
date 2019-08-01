@@ -18,6 +18,7 @@ const nameOfMonth = ["January", "February", "March", "April", "May", "June",
 ];
 
 
+
 const today = new Date();
 
 let counter = 1;
@@ -68,7 +69,6 @@ function closeModal() {
 let day = null;
 function addEvent(e) {
     day = e.target;
-    // day += `<p class = "num-text">${inputText.value}</p>`;
     modalWindow.style.display = 'block';
 }
 function addText() {
@@ -76,3 +76,4 @@ function addText() {
     day.innerHTML += `<p class = "num-text">${inputText.value}</p>`;
     inputText.value = '';
 }
+window.onload = monthToday();
